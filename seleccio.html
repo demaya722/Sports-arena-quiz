@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Sports Arena | Selecció</title>
+    <link rel="stylesheet" href="css/estil.css">
+</head>
+<body>
+    <main class="envoltori-principal">
+        <section class="activa">
+            <div class="targeta-cristall">
+                <h2 id="benvinguda-usuari">Hola!</h2>
+                <div class="graella-categories">
+                    <button class="targeta-categoria or" onclick="començarJoc('A')">🥇 Jocs Olímpics</button>
+                    <button class="targeta-categoria blau" onclick="començarJoc('B')">🎮 Món Gamer</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/logic-comuna.js"></script>
+    <script>
+        // Mostrar el nom que hem guardat a la pàgina anterior
+        const nom = localStorage.getItem('nomUsuari');
+        document.getElementById('benvinguda-usuari').innerText = `Hola, ${nom}!`;
+    </script>
+</body>
+</html>

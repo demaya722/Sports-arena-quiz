@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Sports Arena | Jugant</title>
+    <link rel="stylesheet" href="css/estil.css">
+</head>
+<body>
+    <main class="envoltori-principal">
+        <section class="activa">
+            <div class="targeta-cristall caixa-joc">
+                <div class="capçalera-joc">
+                    <span id="comptador-temps">15</span>
+                    <div id="progres-partida">01 / 06</div>
+                </div>
+                <h3 id="text-pregunta">Carregant...</h3>
+                <div id="contenidor-opcions" class="graella-opcions"></div>
+            </div>
+        </section>
+    </main>
+    <script src="js/logic-comuna.js"></script>
+    <script>
+        // Executar la lògica del joc en carregar aquesta pàgina
+        window.onload = iniciarPartida;
+    </script>
+</body>
+</html>

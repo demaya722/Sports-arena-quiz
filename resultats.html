@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Sports Arena | Resultats</title>
+    <link rel="stylesheet" href="css/estil.css">
+</head>
+<body>
+    <main class="envoltori-principal">
+        <section class="activa">
+            <div class="targeta-cristall">
+                <h2>Missió Completada</h2>
+                <div class="caixa-puntuacio">
+                    <span id="puntuacio-final">0</span>
+                    <p>Encerts</p>
+                </div>
+                <button class="boto-principal" onclick="window.location.href='seleccio.html'">TORNAR A JUGAR</button>
+                <button class="boto-contorn" onclick="window.location.href='index.html'">SORTIR</button>
+            </div>
+        </section>
+    </main>
+    <script>
+        // Recuperar la puntuació final
+        document.getElementById('puntuacio-final').innerText = localStorage.getItem('puntuacioFinal');
+    </script>
+</body>
+</html>
